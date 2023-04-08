@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    box-shadow: 0 6px 9px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(32, 31, 74);
+    color:white;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    left: 70em;
+    transition: 500ms;
+}
+nav:hover{
+    cursor: pointer;
+    transition: 500ms;
+    transform: translateX(-70em);
+}
+
+.logo{
+    width: 50px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    font-style: italic;
+    padding: 5px;
+}
+nav ul li:hover{
+    border-radius: 9px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(32, 31, 74);
+    box-shadow: 0 5px 9px rgb(0, 0, 0);
+
+}
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(32, 31, 74);
+    color:white;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    left: 25em;
+    transition: 500ms;
+}
+nav:hover{
+    cursor: pointer;
+    transition: 500ms;
+    transform: translateX(-25em);
+}  
+nav ul li:not(.menu){
+    display: none;
+}
+.menu{
+    display: block;
+}
+} 
+
+    </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+<img src="do.jpg"  width="100%">
+    </div>
+    <ul>
+<li ><i class="fa fa-user-tie"></i> Profile</li>
+        <li ><i class="fa fa-book"></i> About Me</li>
+        <li ><i class="fa fa-image"></i> Photos</li>
+        <li><i class="fa fa-phone"></i> Reach Me</li>
+        <li ><i class="fa fa-gear"></i> Settings </li>
+        <li class="menu"><i class="fa fa-bars"></i></li>
+    </ul>
+  </nav>  
+  
+</body>
+</html>
